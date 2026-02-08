@@ -36,7 +36,6 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-gray-900 py-32">
       <div className="max-w-7xl mx-auto px-10">
-
         {/* SECTION HEADER */}
         <motion.div
           variants={container}
@@ -48,17 +47,20 @@ export default function Projects() {
             variants={titleVariant}
             className="text-5xl md:text-6xl font-semibold tracking-tight text-zinc-100"
           >
-            Pro<motion.span variants={accentVariant} className="text-teal-400">jects</motion.span>
+            Pro
+            <motion.span variants={accentVariant} className="text-teal-400">
+              jects
+            </motion.span>
           </motion.h2>
 
           <p className="mt-4 text-lg text-zinc-400 max-w-xl">
-            Selected <span className="text-teal-400">MERN</span> applications and
-            system-level projects that demonstrate real-world problem solving.
+            Selected <span className="text-teal-400">MERN</span> applications
+            and system-level projects that demonstrate real-world problem
+            solving.
           </p>
         </motion.div>
 
         <div className="mt-28 space-y-36">
-
           {/* PROJECT 1 — LMS */}
           <motion.div
             className="grid md:grid-cols-2 gap-20 items-center"
@@ -72,14 +74,19 @@ export default function Projects() {
                 variants={titleVariant}
                 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-100"
               >
-                Learning <motion.span variants={accentVariant} className="text-teal-400">Management</motion.span> System
+                Learning{" "}
+                <motion.span variants={accentVariant} className="text-teal-400">
+                  Management
+                </motion.span>{" "}
+                System
               </motion.h3>
 
               <p className="mt-6 text-lg text-zinc-400 leading-relaxed max-w-xl">
-                A full-stack <span className="text-teal-400">MERN</span> LMS designed
-                to manage courses, users, and roles through secure authentication
-                and protected APIs. Emphasis was placed on backend architecture,
-                clean data relationships, and scalable route handling.
+                A full-stack <span className="text-teal-400">MERN</span> LMS
+                designed to manage courses, users, and roles through secure
+                authentication and protected APIs. Emphasis was placed on
+                backend architecture, clean data relationships, and scalable
+                route handling.
               </p>
 
               <p className="mt-5 text-sm text-zinc-500 hover:text-teal-400">
@@ -87,16 +94,32 @@ export default function Projects() {
               </p>
 
               <div className="mt-8 flex gap-4">
-                <a target="/" href="https://learning-main-amber.vercel.app/" className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition">
+                <a
+                  target="/"
+                  href="https://learning-main-amber.vercel.app/"
+                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition"
+                >
                   Live
                 </a>
-                <a target="/" href="https://github.com/ashkarev/learning-main" className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition">
+                <a
+                  target="/"
+                  href="https://github.com/ashkarev/learning-main"
+                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition"
+                >
                   GitHub
                 </a>
               </div>
             </div>
 
-            <img  src="lms.png" className="h-80 bg-zinc-800 rounded-lg transition-transform duration-500 ease-out hover:-translate-y-3" />
+            <img
+              src="lms.png"
+              className="
+    w-full max-w-[520px] h-80 object-cover rounded-lg
+    transition-all duration-500 ease-out
+    hover:-translate-y-3
+    hover:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
+  "
+            />
           </motion.div>
 
           {/* PROJECT 2 — FOOD ORDERING */}
@@ -107,21 +130,34 @@ export default function Projects() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <img src="food.jpg" className="order-2 md:order-1 h-80 bg-zinc-800 rounded-lg transition-transform duration-500 ease-out hover:-translate-y-3" />
+            <img
+              src="food.png"
+              className="
+    w-full max-w-[520px] h-80 object-cover rounded-lg
+    transition-all duration-500 ease-out
+    hover:-translate-y-3
+    hover:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
+  "
+            />
 
             <div className="order-1 md:order-2">
               <motion.h3
                 variants={titleVariant}
                 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-100"
               >
-                Food <motion.span variants={accentVariant} className="text-teal-400">Ordering</motion.span> Platform
+                Food{" "}
+                <motion.span variants={accentVariant} className="text-teal-400">
+                  Ordering
+                </motion.span>{" "}
+                Platform
               </motion.h3>
 
               <p className="mt-6 text-lg text-zinc-400 leading-relaxed max-w-xl">
-                An end-to-end <span className="text-teal-400">MERN</span> food ordering
-                application featuring user authentication, cart management,
-                order processing, and admin-side controls. Built with a focus on
-                real-world data flow between frontend and backend services.
+                An end-to-end <span className="text-teal-400">MERN</span> food
+                ordering application featuring user authentication, cart
+                management, order processing, and admin-side controls. Built
+                with a focus on real-world data flow between frontend and
+                backend services.
               </p>
 
               <p className="mt-5 text-sm text-zinc-500 hover:text-teal-400">
@@ -129,10 +165,18 @@ export default function Projects() {
               </p>
 
               <div className="mt-8 flex gap-4">
-                <a target="/" href="https://food-ordering-mern-lac.vercel.app/" className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition">
+                <a
+                  target="/"
+                  href="https://food-ordering-mern-lac.vercel.app/"
+                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition"
+                >
                   Live
                 </a>
-                <a target="/" href="https://github.com/ashkarev/food-ordering-mern" className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition">
+                <a
+                  target="/"
+                  href="https://github.com/ashkarev/food-ordering-mern"
+                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition"
+                >
                   GitHub
                 </a>
               </div>
@@ -152,7 +196,11 @@ export default function Projects() {
                 variants={titleVariant}
                 className="text-3xl md:text-4xl font-semibold tracking-tight text-zinc-100"
               >
-                KSRTC <motion.span variants={accentVariant} className="text-teal-400">Booking</motion.span> System
+                KSRTC{" "}
+                <motion.span variants={accentVariant} className="text-teal-400">
+                  Booking
+                </motion.span>{" "}
+                System
               </motion.h3>
 
               <p className="mt-6 text-lg text-zinc-400 leading-relaxed max-w-xl">
@@ -166,19 +214,34 @@ export default function Projects() {
                 React • JavaScript • JSON
               </p>
 
-             <div className="mt-8 flex gap-4">
-                <a target="/" href="https://bus-route-finder-six.vercel.app/" className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition">
+              <div className="mt-8 flex gap-4">
+                <a
+                  target="/"
+                  href="https://bus-route-finder-six.vercel.app/"
+                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition"
+                >
                   Live
                 </a>
-                <a target="/"  href="https://github.com/ashkarev/Bus-Route-Finder" className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition">
+                <a
+                  target="/"
+                  href="https://github.com/ashkarev/Bus-Route-Finder"
+                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition"
+                >
                   GitHub
                 </a>
               </div>
             </div>
 
-            <img src="bus.jpg" className="h-80 bg-zinc-800 rounded-lg transition-transform duration-500 ease-out hover:-translate-y-3" />
+            <img
+              src="bus.png"
+              className="
+    w-full max-w-[520px] h-80 object-cover rounded-lg
+    transition-all duration-500 ease-out
+    hover:-translate-y-3
+    hover:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
+  "
+            />
           </motion.div>
-
         </div>
       </div>
     </section>

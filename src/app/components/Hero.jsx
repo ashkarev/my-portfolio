@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-gray-900 flex items-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen bg-gray-900 flex items-center overflow-hidden">
 
       {/* BIG BACKGROUND WORD */}
      <div className="

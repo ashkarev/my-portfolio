@@ -1,11 +1,13 @@
-import {  Sora } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 
-const inder=Sora({
-  subsets:["latin"],
-  weight:["400"]
-})
+import { ToastContainer, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -15,10 +17,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={inder.className}
-      >
+      <body className={sora.className}>
         {children}
+
+        {/* Toasts live here */}
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          transition={Bounce}
+        />
       </body>
     </html>
   );
