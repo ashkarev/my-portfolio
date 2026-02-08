@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Left */}
           <p className="text-sm text-zinc-400 text-center md:text-left">
             © {new Date().getFullYear()}{" "}
-            <span className="text-zinc-200 font-medium">Ashkar</span>.  
+            <span className="text-zinc-200 font-medium">Ashkar</span>.
             All rights reserved.
           </p>
 
@@ -33,7 +33,7 @@ export default function Footer() {
             <a
               href="https://github.com/ashkarev"
               target="_blank"
-              className="text-zinc-400 hover:text-teal-400 transition"
+              className="text-zinc-400 hover:text-teal-400 active:text-teal-400 transition"
             >
               <Github size={25} />
             </a>
@@ -41,14 +41,14 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/ashkar-s/"
               target="_blank"
-              className="text-zinc-400 hover:text-teal-400 transition"
+              className="text-zinc-400 hover:text-teal-400 active:text-teal-400 transition"
             >
               <Linkedin size={25} />
             </a>
 
             <a
               href="mailto:ashkars178@gmail.com"
-              className="text-zinc-400 hover:text-teal-400 transition"
+              className="text-zinc-400 hover:text-teal-400 active:text-teal-400 transition"
             >
               <Mail size={25} />
             </a>

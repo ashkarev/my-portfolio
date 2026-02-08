@@ -8,10 +8,10 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", href: "#hero" },
-   
+
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
-     { name: "Experience", href: "#experience" },
+    { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -20,9 +20,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* LOGO */}
-       <Link
-  href="#hero"
-  className="
+        <Link
+          href="#hero"
+          className="
     w-10 h-10
     flex items-center justify-center
     rounded-full
@@ -31,11 +31,12 @@ export default function Navbar() {
     text-xl font-bold
     shadow-[0_0_20px_rgba(45,212,191,0.6)]
     hover:scale-105
+    active:scale-105
     transition
   "
->
-  A
-</Link>
+        >
+          A
+        </Link>
 
 
         {/* DESKTOP MENU */}
@@ -44,7 +45,7 @@ export default function Navbar() {
             <li key={link.name}>
               <a
                 href={link.href}
-                className="text-zinc-300 hover:text-teal-400 transition"
+                className="text-zinc-300 hover:text-teal-400 active:text-teal-400 transition"
               >
                 {link.name}
               </a>
@@ -71,7 +72,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="text-zinc-300 text-lg hover:text-teal-400 transition"
+                  className="text-zinc-300 text-lg hover:text-teal-400 active:text-teal-400 transition"
                 >
                   {link.name}
                 </a>

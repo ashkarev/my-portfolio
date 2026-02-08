@@ -28,7 +28,7 @@ export default function Hero() {
         transition={{ duration: 1.8, ease: "easeOut" }}
         className="absolute inset-0 md:left-auto md:right-0 md:w-[58%] h-full pointer-events-none z-0"
       >
-        <div className="absolute inset-0 bg-gradient-to-l from-[#050b18] via-[#050b18]/50 to-transparent z-20" />
+        <div className="absolute inset-0 bg-linear-to-l from-[#050b18] via-[#050b18]/50 to-transparent z-20" />
         <div className="absolute inset-0 bg-[#050b18]/70 md:hidden z-20" />
 
         <img
@@ -105,6 +105,7 @@ export default function Hero() {
                   inline-block px-6 py-3
                   border border-teal-400 text-teal-400 rounded-md
                   hover:bg-teal-400 hover:text-black
+                  active:bg-teal-400 active:text-black
                   transition-colors duration-300
                 "
               >

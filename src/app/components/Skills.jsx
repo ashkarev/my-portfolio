@@ -77,15 +77,17 @@ export default function Skills() {
                 key={skill.name}
                 variants={item}
                 whileHover={{ y: -4 }}
+                whileTap={{ y: -4 }}
                 className="
                   group
                   h-32
                   rounded-2xl
                   border border-white/10
-                  bg-gradient-to-b from-white/[0.04] to-white/[0.01]
+                  bg-linear-to-b from-white/4 to-white/1
                   flex flex-col items-center justify-center gap-3
                   transition-all duration-300
                   hover:border-teal-400/40
+                  active:border-teal-400/40
                 "
               >
                 <Icon
@@ -94,6 +96,7 @@ export default function Skills() {
                     text-zinc-400
                     transition-colors duration-300
                     group-hover:text-teal-400
+                    group-active:text-teal-400
                   "
                 />
 
@@ -103,6 +106,7 @@ export default function Skills() {
                     text-zinc-300
                     transition-colors duration-300
                     group-hover:text-zinc-100
+                    group-active:text-zinc-100
                   "
                 >
                   {skill.name}

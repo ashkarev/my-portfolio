@@ -77,6 +77,11 @@ export const CometCard = ({
           z: 50,
           transition: { duration: 0.2 },
         }}
+        whileTap={{
+          scale: 1.05,
+          z: 50,
+          transition: { duration: 0.2 },
+        }}
         className="relative rounded-2xl">
         {children}
         <motion.div

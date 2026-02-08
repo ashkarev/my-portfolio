@@ -21,7 +21,7 @@ export default function Experience() {
         <div className="relative pl-12">
 
           {/* Vertical line */}
-          <div className="absolute left-3 top-0 h-full w-[2px] bg-gradient-to-b from-teal-400/60 via-teal-400/20 to-transparent" />
+          <div className="absolute left-3 top-0 h-full w-[2px] bg-linear-to-b from-teal-400/60 via-teal-400/20 to-transparent" />
 
           {/* Experience Item */}
           <motion.div
@@ -34,10 +34,12 @@ export default function Experience() {
               mb-20
               rounded-2xl
               border border-white/10
-              bg-gradient-to-br from-white/[0.06] to-white/[0.02]
+              bg-linear-to-br from-white/6 to-white/2
               p-8
               hover:border-teal-400/40
+              active:border-teal-400/40
               hover:shadow-[0_0_40px_rgba(45,212,191,0.15)]
+              active:shadow-[0_0_40px_rgba(45,212,191,0.15)]
               transition-all duration-300
             "
           >
@@ -94,7 +96,9 @@ export default function Experience() {
                       text-zinc-300
                       border border-white/10
                       hover:border-teal-400/50
+                      active:border-teal-400/50
                       hover:text-teal-400
+                      active:text-teal-400
                       transition
                     "
                   >

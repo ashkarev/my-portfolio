@@ -97,14 +97,14 @@ export default function Projects() {
                 <a
                   target="/"
                   href="https://learning-main-amber.vercel.app/"
-                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition"
+                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black active:bg-teal-400 active:text-black transition"
                 >
                   Live
                 </a>
                 <a
                   target="/"
                   href="https://github.com/ashkarev/learning-main"
-                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition"
+                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 active:border-zinc-400 transition"
                 >
                   GitHub
                 </a>
@@ -117,7 +117,9 @@ export default function Projects() {
     w-full max-w-[520px] h-80 object-cover rounded-lg
     transition-all duration-500 ease-out
     hover:-translate-y-3
+    active:-translate-y-3
     hover:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
+    active:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
   "
             />
           </motion.div>
@@ -175,7 +177,7 @@ export default function Projects() {
                 <a
                   target="/"
                   href="https://github.com/ashkarev/food-ordering-mern"
-                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition"
+                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 active:border-zinc-400 transition"
                 >
                   GitHub
                 </a>
@@ -218,14 +220,14 @@ export default function Projects() {
                 <a
                   target="/"
                   href="https://bus-route-finder-six.vercel.app/"
-                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black transition"
+                  className="px-6 py-2 border border-teal-400 text-teal-400 rounded-md hover:bg-teal-400 hover:text-black active:bg-teal-400 active:text-black transition"
                 >
                   Live
                 </a>
                 <a
                   target="/"
                   href="https://github.com/ashkarev/Bus-Route-Finder"
-                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 transition"
+                  className="px-6 py-2 border border-zinc-600 text-zinc-300 rounded-md hover:border-zinc-400 active:border-zinc-400 transition"
                 >
                   GitHub
                 </a>
@@ -238,7 +240,9 @@ export default function Projects() {
     w-full max-w-[520px] h-80 object-cover rounded-lg
     transition-all duration-500 ease-out
     hover:-translate-y-3
+    active:-translate-y-3
     hover:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
+    active:shadow-[0_25px_60px_-15px_rgba(45,212,191,0.35)]
   "
             />
           </motion.div>
