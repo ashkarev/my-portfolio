@@ -2,60 +2,103 @@
 
 import { motion } from "framer-motion";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.4 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen bg-gray-900 flex items-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen bg-gray-900 flex items-center overflow-hidden"
+    >
+      {/* IMAGE */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.8, ease: "easeOut" }}
+        className="absolute inset-0 md:left-auto md:right-0 md:w-[58%] h-full pointer-events-none z-0"
+      >
+        <div className="absolute inset-0 bg-gradient-to-l from-[#050b18] via-[#050b18]/50 to-transparent z-20" />
+        <div className="absolute inset-0 bg-[#050b18]/70 md:hidden z-20" />
 
-      {/* BIG BACKGROUND WORD */}
-     <div className="
-  absolute bottom-[-20px] md:bottom-[-40px]
-  left-1/2 -translate-x-1/2
-  text-[7rem] md:text-[18rem]
-  font-extrabold tracking-tight
-  text-white/5 select-none pointer-events-none
-  whitespace-nowrap
-">
-  DEVELOPER
-</div>
+        <img
+          src="/me.png"
+          alt="Ashkar"
+          className="
+            absolute
+            right-[6%] md:right-[1%]
+            bottom-[-10%]
+            h-[130%]
+            object-cover
+            grayscale
+            opacity-90 md:opacity-100
+            z-10
+          "
+        />
+      </motion.div>
 
-      <div className="w-full max-w-7xl mx-auto px-10">
+      {/* BACKGROUND WORD */}
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 0.12, y: 0 }}
+        transition={{ duration: 1.8, ease: "easeOut", delay: 0.6 }}
+        className="
+          absolute bottom-[-20px] md:bottom-[-40px]
+          left-1/2 -translate-x-1/2
+          text-[7rem] md:text-[18rem]
+          font-extrabold tracking-tight
+          text-white
+          mix-blend-overlay
+          select-none pointer-events-none
+          whitespace-nowrap
+          z-10
+        "
+      >
+        DEVELOPER
+      </motion.div>
+
+      {/* CONTENT */}
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="relative z-30 w-full max-w-7xl mx-auto px-6 md:px-10"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+          <div className="max-w-xl text-white">
 
-          {/* LEFT SIDE */}
-          <div className="flex flex-col justify-center max-w-xl text-white">
-
-            {/* NAME — smooth mask reveal (slow) */}
-            <motion.h1
-              className="text-6xl md:text-7xl font-semibold tracking-tight text-zinc-100 overflow-hidden"
-              initial={{ clipPath: "inset(0 100% 0 0)" }}
-              animate={{ clipPath: "inset(0 0% 0 0)" }}
-              transition={{ duration: 2.2, ease: "easeInOut" }}
-            >
+            <motion.h1 variants={item} className="text-5xl md:text-7xl font-semibold">
               Ash<span className="text-teal-400">kar S</span>
             </motion.h1>
 
-            {/* MERN — static (confidence) */}
-            <h1 className="text-6xl md:text-7xl font-semibold tracking-tight text-zinc-100 mt-3">
+            <motion.h1 variants={item} className="text-5xl md:text-7xl font-semibold mt-3">
               ME<span className="text-teal-400">RN</span>
-            </h1>
+            </motion.h1>
 
-            {/* DESCRIPTION — static (readability first) */}
-            <p className="mt-4 text-xl text-zinc-400">
+            <motion.p variants={item} className="mt-4 text-lg md:text-xl text-zinc-400">
               I specialize in building{" "}
               <span className="text-teal-400">MERN stack</span> applications with
               Node.js APIs, MongoDB databases, and React-based frontends.
               <br />
               Experienced in handling backend logic, authentication flows,
               and connecting real-world data with clean user interfaces.
-            </p>
+            </motion.p>
 
-            <p className="mt-2 text-lg text-zinc-500 hover:text-teal-400">
+            <motion.p variants={item} className="mt-2 text-base md:text-lg text-zinc-500">
               MongoDB • Express • React • Node.js
-            </p>
+            </motion.p>
 
-            {/* CTA */}
-            <div className="mt-10">
+            <motion.div variants={item} className="mt-8">
               <a
                 href="#projects"
                 className="
@@ -67,22 +110,11 @@ export default function Hero() {
               >
                 View Projects
               </a>
-            </div>
+            </motion.div>
+
           </div>
-
-          {/* RIGHT SIDE (image placeholder) */}
-   {/* RIGHT SIDE IMAGE */}
-
-
- 
-
- 
-
-
-
-
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
