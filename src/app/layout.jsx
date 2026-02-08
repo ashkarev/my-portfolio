@@ -11,7 +11,7 @@ const sora = Sora({
 
 export const metadata = {
   title: "Ashkar S Portfolio",
-  description: "Full stack developer",
+  description: "Full stack developer ",
 };
 
 export default function RootLayout({ children }) {
